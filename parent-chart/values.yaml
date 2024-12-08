@@ -26,3 +26,10 @@ mysql:
   image:
     repository: bitnami/mysql
     tag: "8.0"
+httpd:
+  enabled: true # Set to true to enable HTTPD
+  replicaCount: 2 # Customize replica count for HTTPD
+  image:
+    tag: "latest" # Update HTTPD version if necessary
+  service:
+    port: 8080 # Customize the HTTPD service port

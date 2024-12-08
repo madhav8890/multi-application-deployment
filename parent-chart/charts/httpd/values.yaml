@@ -1,0 +1,16 @@
+# HTTPD chart values
+
+enabled: true  # Flag to enable/disable HTTPD (default: disabled)
+
+replicaCount: 1
+
+image:
+  repository: httpd
+  tag: "2.4.46"
+  pullPolicy: IfNotPresent
+
+service:
+  name: httpd
+  type: ClusterIP
+  port: 80
+  targetPort: 80

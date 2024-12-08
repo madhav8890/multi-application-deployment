@@ -21,3 +21,7 @@ dependencies:
     version: "8.9.0"
     repository: "https://charts.bitnami.com/bitnami"
     condition: mysql.enabled
+  - name: httpd  # Added HTTPD as a dependency
+    repository: file://./charts/httpd
+    condition: httpd.enabled  # Make HTTPD deployable through this flag
+
