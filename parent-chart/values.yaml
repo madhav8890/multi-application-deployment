@@ -1,0 +1,28 @@
+# parent-chart/values.yaml
+nginx:
+  enabled: true
+  replicaCount: 2
+  image:
+    repository: nginx
+    tag: "latest"
+
+mongodb:
+  enabled: false
+  replicaCount: 3
+  image:
+    repository: bitnami/mongodb
+    tag: "5.0"
+
+elasticsearch:
+  enabled: false
+  replicaCount: 2
+  image:
+    repository: bitnami/elasticsearch
+    tag: "7.10"
+
+mysql:
+  enabled: true
+  replicaCount: 2
+  image:
+    repository: bitnami/mysql
+    tag: "8.0"

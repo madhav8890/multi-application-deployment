@@ -1,0 +1,29 @@
+# parent-chart/templates/argo-cd-application.yaml
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: multi-application-deployment
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/your-organization/multi-application-deployment.git'
+    targetRevision: HEAD
+    path: parent-chart
+    helm:
+      values: |
+        nginx:
+          enabled: true
+        mongodb:
+          enabled: false
+        elasticsearch:
+          enabled: true
+        mysql:
+          enabled: true
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

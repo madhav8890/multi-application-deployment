@@ -1,0 +1,23 @@
+# parent-chart/Chart.yaml
+apiVersion: v2
+name: multi-application-parent
+description: A parent chart for dynamic deployment of multiple applications
+version: 1.0.0
+
+dependencies:
+  - name: nginx
+    version: "10.0.0"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: nginx.enabled
+  - name: mongodb
+    version: "13.5.0"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: mongodb.enabled
+  - name: elasticsearch
+    version: "15.3.0"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: elasticsearch.enabled
+  - name: mysql
+    version: "8.9.0"
+    repository: "https://charts.bitnami.com/bitnami"
+    condition: mysql.enabled
