@@ -7,7 +7,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/your-organization/multi-application-deployment.git'
+    repoURL: 'https://github.com/madhav8890/multi-application-deployment.git'
     targetRevision: HEAD
     path: parent-chart
     helm:
