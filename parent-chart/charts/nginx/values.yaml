@@ -630,7 +630,7 @@ staticSitePVC: ""
 service:
   ## @param service.type Service type
   ##
-  type: clusterIP
+  type: ClusterIP
   ## @param service.ports.http Service HTTP port
   ## @param service.ports.https Service HTTPS port
   ##
