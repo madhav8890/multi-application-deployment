@@ -630,7 +630,7 @@ staticSitePVC: ""
 service:
   ## @param service.type Service type
   ##
-  type: LoadBalancer
+  type: nodePort
   ## @param service.ports.http Service HTTP port
   ## @param service.ports.https Service HTTPS port
   ##
