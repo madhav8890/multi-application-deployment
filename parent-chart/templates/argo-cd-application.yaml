@@ -17,9 +17,9 @@ spec:
         mongodb:
           enabled: false
         elasticsearch:
-          enabled: true
+          enabled: false
         mysql:
-          enabled: true
+          enabled: false
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default

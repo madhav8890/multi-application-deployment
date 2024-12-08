@@ -21,7 +21,7 @@ elasticsearch:
     tag: "7.10"
 
 mysql:
-  enabled: true
+  enabled: false
   replicaCount: 2
   image:
     repository: bitnami/mysql
