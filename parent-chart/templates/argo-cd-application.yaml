@@ -21,7 +21,7 @@ spec:
         mysql:
           enabled: false
         httpd:
-          enabled: false
+          enabled: true
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
