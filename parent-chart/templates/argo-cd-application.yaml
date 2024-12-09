@@ -19,7 +19,7 @@ spec:
         elasticsearch:
           enabled: false
         mysql:
-          enabled: true
+          enabled: false
         httpd:
           enabled: true
   destination:
